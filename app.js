@@ -2,11 +2,8 @@ import express from 'express';
 import {
   InteractionType,
   InteractionResponseType,
-  InteractionResponseFlags,
-  MessageComponentTypes,
-  ButtonStyleTypes,
 } from 'discord-interactions';
-import { VerifyDiscordRequest, getRandomEmoji, DiscordRequest } from './utils.js';
+import { VerifyDiscordRequest, getRandomEmoji } from './utils.js';
 import {
   TEST_COMMAND,
   HasGuildCommands,

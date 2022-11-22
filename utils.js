@@ -1,8 +1,9 @@
+import 'dotenv/config';
 import fetch from "node-fetch";
 import { verifyKey } from "discord-interactions";
-
+//, encoding
 export function VerifyDiscordRequest(clientKey) {
-  return function (req, res, buf, encoding) {
+  return function (req, res, buf) {
     const signature = req.get("X-Signature-Ed25519");
     const timestamp = req.get("X-Signature-Timestamp");
 
